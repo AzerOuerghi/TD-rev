@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListVoitures {
-    private List<Voiture> voitures;
+    private final List<Voiture> voitures;
 
     public ListVoitures() {
         voitures = new ArrayList<>();
