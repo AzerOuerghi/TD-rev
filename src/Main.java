@@ -10,16 +10,23 @@ public class Main {
 
         // Create some cars and clients
         Voiture voiture1 = new Voiture(1, "Toyota", 50.0f);
+        Voiture voiture3 = new Voiture(1, "bmw", 70.0f);
+
         Voiture voiture2 = new Voiture(2, "Honda", 60.0f);
         Client client1 = new Client(101, "John", "Doe");
         Client client2 = new Client(102, "Alice", "Smith");
+        Client client3 = new Client(12, "Ali", "th");
+
 
         // Add cars to the parking lot
         agence.parking.ajouterVoiture(voiture1);
         agence.parking.ajouterVoiture(voiture2);
+        agence.parking.ajouterVoiture(voiture3);
+
 
         // Rent a car to a client
         agence.louerVoiture(client2, voiture1);
+        agence.louerVoiture(client3, voiture2);
 
         // Return a car
         agence.retournerVoiture(client1, voiture1);
