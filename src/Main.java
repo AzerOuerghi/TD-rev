@@ -14,10 +14,11 @@ public class Main {
             // Add Voitures to the parking lot
             agence.ajoutVoiture(voiture1);
             agence.ajoutVoiture(voiture2);
-
+agence.suppVoiture(voiture1);
             // Rent Voitures to Clients
             agence.loueClientVoiture(client1, voiture1);
             agence.loueClientVoiture(client2, voiture2);
+            agence.triNomCroissant();
 
             // Display Clients and their rented Voitures
             agence.afficheLesClientsEtLeursListesVoitures();
